@@ -2,88 +2,78 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
-    Write your CSS here 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
-
-    For dimensions, see dimensions.png image.
-    HINT: Remember you can't change the properties of grid lines.
-    But grid lines are transparent!
-    */
-    .container{
-      background-color: black;
-      width: 748px;
-      height: 748px;
-      display: grid;
-      grid-template-columns: 320px 198px 153px 47px;
-      grid-template-rows: 414px 130px 155px 19px;
-      gap: 10px
-    }
-    .red{
-      background-color: #E72F24;
-    }
-    .blue{
-      background-color: #004592;
-      grid-column-start: 4;
-      grid-row: 2 / 2;
-      border-bottom:10px solid black;
-    }
-
-    .yellow{
-      background-color: #F9D01E;
-      grid-column: 2 / 3;
-      grid-row: 4;
-    }
-    
-
-    .black{
-      background-color: #232629;
-      grid-column: 3 / 4;
-      grid-row: 4;
-    }
-
-    .white1{
-        background-color: #F0F1EC;
-        grid-column: span 3;
-
-    }
-    .white2{
-      background-color: #F0F1EC;
-        grid-row: span 2;
-    }
-    .white3{
-      background-color: #F0F1EC;
-        grid-area: span 2 / span 2;
-    }
-    .white4{
-      background-color: #F0F1EC;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noam</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Write your HTML here -->
-   <div class="container">
-      <div class="red"></div>
-      <div class="white1"></div>
-      <div class="white2"></div>
-      <div class="white3"></div>
-      <div class="blue"></div>
-      <div class="white4"></div>
-      <div class="white4"></div>
-      <div class="yellow"></div>
-      <div class="black"></div>
-      <div class="white4"></div>
-   </div>
+  <div class="px-4 py-5 mb-5 text-center heroBackground">
+    <h1 class="display-1 text-body-emphasis edu-nsw-act-cursive-hero">I'm Noam</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        A Computer Science student at the Ben-Gurion University of the Negev.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 container carousel">
+
+    <img src="./images/IMG-20241017-WA0021.jpg" class="NoamPhoto">
+
+    <h2 class="fw-normal mt-3">Hi!</h2>
+    <p style="text-align: center;">
+      I’m a passionate programmer who enjoys exploring new technologies and constantly expanding my knowledge. I thrive
+      on setting ambitious goals for myself and tackling challenges that push me to grow both personally and
+      professionally. Whether it’s learning a new programming language, diving into an unfamiliar framework, or solving
+      complex problems, I’m always eager to take the next step forward.</p>
+    <p><a class="btn btn-secondary" href="#">View CV »</a></p>
+  </div>
+  <hr class="featurette-divider">
+
+  <div class="container list">
+    <h1 style="text-align: center;" class="mb-3">My Skills:</h1>
+    <ul class="list-group list-group-horizontal mt-4 mb-5">
+      <li class="list-group-item">Java</li>
+      <li class="list-group-item">Python</li>
+      <li class="list-group-item">HTML & CSS</li>
+      <li class="list-group-item">JavaScript</li>
+      <li class="list-group-item">SQL</li>
+    </ul>
+  </div>
+  <hr class="featurette-divider">
+
+  <!-- Projects Section -->
+  <h2 style="text-align: center; margin: 40px 0;">Projects:</h2>
+  <div class="projects-grid">
+    <div class="project">
+      <h3>TinDog:</h3>
+      <p>A social network for dogs.</p>
+      <a href="https://noamhen1.github.io/TinDog/"><img src="./images/Tindog.png" alt="TinDog Project"
+          class="project-image"></a>
+    </div>
+    <div class="project">
+      <h3>Mondrian Project</h3>
+      <p>Class Project to recreate an art piece with CSS grid.</p>
+      <a href="https://noamhen1.github.io/Mondrian-Project/"><img src="./images/mondarian.png" style="width: 75%;" alt="Mondrian Project" class="project-image"></a>
+    </div>
+    <div class="project">
+      <h3 class="project-3">More To Come!</h3>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="heroBackground footer">
+    <a href="https://www.linkedin.com/in/noam-hen-b2541119a/">Linkedin</a>
+    <p class="copyright" style="margin-top: 40px;">© Noam Hen</p>
+  </div>
 </body>
 
 </html>
